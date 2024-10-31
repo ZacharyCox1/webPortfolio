@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <h1>Welcome to my portfolio</h1>
+       <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+       </nav>
+    </header>
+    <section id="About">
+        
+        <h2>About Me</h2>
+        <p>
+            My name is Zach, an IT major!
+        </p>
+
+    </section>
+    
+    <section id="Projects">
+        <h2>Projects</h2>
+
+        <div class="Project">
+            <h3>Project One</h3>
+            <p>
+                Description: This is my project.
+            </p>
+            <img src="https://via.placeholder.com/300" alt="Project 1">
+        </div>
+        
+        <div class="Project">
+            <h3>Project Two</h3>
+            <p>
+                Description: This is my project.
+            </p>
+            <img src="https://via.placeholder.com/300" alt="Project 2">
+        </div>
+
+    </section>
+
+    <section id="Contact">
+
+        <h2>Contact Me</h2>
+
+        <form id="contact-form" action="https://formspree.io/f/mqakpqeg" method="POST" onsubmit="handleSubmit(event)">
+
+            <input name="name" type="text" id="name" placeholder="Name" required>
+            <input name="email" type="email" id="email" placeholder="Email" required>
+            <textarea name="message" id="message" placeholder="Comments/Concerns" required></textarea>
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy;2024 Zach's Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
